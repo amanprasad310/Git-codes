@@ -63,6 +63,7 @@ git branch -v---------------------------(will give branches name with their last
 git branch --merge------------------------------(show the branches which are merged)
 git branch --non-merge--------------------------(show the branches which are not merged)
 git push origin [branch_name]:{new_branch_name]-----(create and push a new branch)
+git push -d origin [branch_name]-------------------(to delete the pushed branch from git hub)
 git config --global alias.[shortform key] [code]
 {example---git config --global alias.st status----------(alias make a short form of code)}
 git restore --staged  [file]    git config --global alias.unstage 'restore --staged --'                                           
