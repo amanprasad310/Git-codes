@@ -57,11 +57,12 @@ git remote -v ---------------------------------(show 2 URLs)
 git push -u origin master------------------------(to push the file to GitHub)
 git restore [filename].[filetype]--------------------(to restore file)
 git checkout -b [branch_name]--------------------(create new branch)
-git checkout [branch_name]-----------------------switch to corresponding name branch
-git merge [branch_name]-------------------------to merge branches
-git branch -v----------------------------will give branches name with their last commit hash and commit message
-git branch --merge------------------------------show the branches which are merged
-git branch --non-merge--------------------------show the branches which are not merged 
+git checkout [branch_name]-----------------------(switch to corresponding name branch)
+git merge [branch_name]-------------------------(to merge branches)
+git branch -v---------------------------(will give branches name with their last commit hash and commit message)
+git branch --merge------------------------------(show the branches which are merged)
+git branch --non-merge--------------------------(show the branches which are not merged)
+git push origin [branch_name]:{new_branch_name]-----(create and push a new branch)
 git config --global alias.[shortform key] [code]
 {example---git config --global alias.st status----------(alias make a short form of code)}
 git restore --staged  [file]    git config --global alias.unstage 'restore --staged --'                                           
