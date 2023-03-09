@@ -1,4 +1,4 @@
-#1__Important words
+1__Important words
 [
 ----VCS(version control system)
 ----Local VCS
@@ -11,7 +11,7 @@
 
 
 
-#2__git codes--
+2__git codes--
 {
 git config --global user.name "[name]"---------to give a user name
 git config --global user.email "[email_address]" --to give an email address
@@ -62,13 +62,11 @@ git merge [branch_name]-------------------------to merge branches
 git branch -v----------------------------will give branches name with their last commit hash and commit message
 git branch --merge------------------------------show the branches which are merged
 git branch --non-merge--------------------------show the branches which are not merged 
-git config --global alias.<shortform key>   '<code>'        {example      git config --global alias.st status     (alias make a short form of code)   git restore --staged  <file>    git config --global alias.unstage 'restore --staged --'  }                                            
-}
+git config --global alias.[shortform key] [code]
+{example---git config --global alias.st status----------(alias make a short form of code)}
+git restore --staged  [file]    git config --global alias.unstage 'restore --staged --'                                           
 
 
-#use full keys
-{
-q or q+enter  to quit the log
-Tab button to auto-file the file name
-}
+3__use full keys
+[q or q+enter  to quit the log Tab button to auto-file the file name]
 [ for git commit --amend]{i --> to insert}{esc --> to write in amend}{":"-->to write the input}{wq-->to commit amend
