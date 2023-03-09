@@ -1,0 +1,74 @@
+#1__Important words
+[
+----VCS(version control system)
+----Local VCS
+----Centralized VCS
+----Distributed VCS
+----working directory 
+----staging area
+----git directory(repository)
+]
+
+
+
+#2__git codes--
+{
+git config --global user.name "[name]"---------to give a user name
+git config --global user.email "[email_address]" --to give an email address
+git config --list----------------------------show all Git config properties throughout all of variously scoped Git files
+git status---------------------------------to check the changes, staged file, and modified file.
+git init ----------------------------------(make a hidden folder)
+git add --a-------------------------------(to add all files to stage)
+git commit -m "[commit message]"------------(commit with some message)  
+git log-----------------------------------(give commit message and commit hash with related time )
+rm -rf .git--------------------------------(delete all .git folders)
+pwd-------------------------------------(present working directory)(show us working folder name with git)
+ls ---------------------------------------(list content)
+cd    TensorFlow/---------------------------( To change this current working directory)
+touch [file_name].[file_type]-------------------(create a file related to file type and name)
+touch .gitignore----------------------------(create a file to ignore file by writing there file name)
+-----------------------------------------[("\folder\" to ignore outer folder)
+-----------------------------------------("*.filetype" to ignore all this type of file)
+-----------------------------------------("file\" to ignore all these names of file)]
+git restore --stage <file>---------------------(to unstaged the file)
+git diff-----------------------------------(compare working directory and staging area)
+git diff --staged---------------------------(will only show changes to files in the "staged" area)
+git commit -a -m "[commit message]"----------(skipped staging area/)
+git rm [file_name].[file_type]------------------(to delete and stage file at the same time)
+git mv [file_name].[file_type] [rename_file].[file_type]- (to change the selected file name and commit at the same time)
+git clone [#url]------------------------------(download git repo. form github/copy or clone repo. to new directory)
+git log -p-----------------------------------(show what is changed)
+git log -p -2--------------------------------(show what is changed in 2 line)
+git log --stat--------------------------------(short version of what has been changed)
+git log --pretty=one--------------------------(commit in single line)
+git log --pretty=short-------------------------(commit in short form)
+git log --pretty=full--------------------------(commits full detail)
+git log --since=2.days-------------------------(commit since 2 days)
+git log --since=2.week-------------------------(commit since 2 week)
+git log --since=2.month------------------------(commit since 2 month)
+git log --since=2.year--------------------------(commit since 2 year)
+git log --pretty=format:"%h -- %an"--------------(commit with hash and global name)
+git log -p -1---------------------------------(commit in 1 line)
+git commit --amend---------------------------(a convenient way to modify the most recent commit)(_____)
+git checkout [branch_name]----------------------(come back to related branch)
+git checkout -f--------------------------------(____________)
+git remote------------------------------------(show url name)            
+git remote -v ---------------------------------(show 2 URLs)
+git push -u origin master------------------------(to push the file to GitHub)
+git restore [filename].[filetype]--------------------(to restore file)
+git checkout -b [branch_name]--------------------(create new branch)
+git checkout [branch_name]-----------------------switch to corresponding name branch
+git merge [branch_name]-------------------------to merge branches
+git branch -v----------------------------will give branches name with their last commit hash and commit message
+git branch --merge------------------------------show the branches which are merged
+git branch --non-merge--------------------------show the branches which are not merged 
+git config --global alias.<shortform key>   '<code>'        {example      git config --global alias.st status     (alias make a short form of code)   git restore --staged  <file>    git config --global alias.unstage 'restore --staged --'  }                                            
+}
+
+
+#use full keys
+{
+q or q+enter  to quit the log
+Tab button to auto-file the file name
+}
+[ for git commit --amend]{i --> to insert}{esc --> to write in amend}{":"-->to write the input}{wq-->to commit amend
